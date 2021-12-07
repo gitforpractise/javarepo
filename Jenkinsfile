@@ -5,7 +5,7 @@ node('maven-3.8.4')
     }
     stage('package')
     {
-        sh '/usr/local/apache-maven-3.8.4/bin mvn clean package'
+        sudo sh '/usr/local/apache-maven-3.8.4/bin mvn clean package'
     }
 }
 
